@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My GameHub Creation Journey</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #1e1e2e;
+            color: #cdd6f4;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+        }
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+        }
+        .event {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .event-date {
+            min-width: 120px;
+            text-align: right;
+            padding-right: 20px;
+            font-weight: bold;
+            color: #89b4fa;
+        }
+        .event-content {
+            padding: 20px;
+            background: #313244;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            flex-grow: 1;
+        }
+        .arrow {
+            width: 0;
+            height: 0;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-left: 10px solid #313244;
+        }
+
+        .hi p {
+  font-family: 'Arial', sans-serif;
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.hi p:hover {
+  background-color: #3498db;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.btn {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  margin: 10px;
+  display: inline-block;
+}
+
+/* Primary Button */
+.btn.primary {
+  background-color: #3498db;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn.primary:hover {
+  background-color: #2980b9;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transform: translateY(-3px);
+}
+
+/* Secondary Button */
+.btn.secondary {
+  background-color: #7f8c8d;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn.secondary:hover {
+  background-color: #95a5a6;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transform: translateY(-3px);
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <center>
+    <h1>My GameHub Creation Journey</h1>
+     <button onclick="changeSection('section1')" class="btn primary">Narrative</button>
+     <button onclick="changeSection('section2')" class="btn secondary">Commits</button>
+     </center>
+    <section id="section1" class="section">
+    <div class="container">
+      
+        <div class="timeline">
+            <div class="event">
+                <div class="event-date">August 2024</div>
+                <div class="arrow"></div>
+                <div class="event-content">
+                    <h2>Initial inspiration and hard work</h2>
+                    <p>In August 2024, an unexpected encounter with an unblocked gaming website sparked a transformative realization — the boundless potential of creating a platform where players could freely explore and enjoy a diverse array of games. Witnessing firsthand the joy and excitement such platforms brought to users, I felt an overwhelming desire to contribute to this digital playground. Despite my limited technical knowledge at the time, I approached the challenge with unwavering determination and an insatiable thirst for learning. This pivotal moment marked the inception of my creative journey, where each idea, no matter how small, became a building block for a grand vision. I spent countless hours researching game development frameworks, exploring user interface principles, and sketching out preliminary concepts for what would eventually evolve into a fully-fledged GameHub. This initial spark of inspiration laid the groundwork for an ambitious project, driven by passion, resilience, and an unrelenting commitment to creating a platform that would resonate with players worldwide.</p>
+                </div>
+            </div>
+            <div class="event">
+                <div class="event-date">September 2024</div>
+                <div class="arrow"></div>
+                <div class="event-content">
+                    <h2>First Prototype Release</h2>
+                    <p>In my unwavering commitment to transforming my vision into reality, I devoted an extensive amount of time and effort to mastering a wide array of crucial programming languages. Throughout the month of September, I fully immersed myself in the study and practical application of SCSS, JavaScript, Node.js, Python, as well as advanced HTML and CSS. Each of these languages served as a vital key, unlocking a multitude of possibilities and enabling me to meticulously refine both the design and functionality of my platform.
+
+                        This phase of intense learning and development was characterized by an unrelenting curiosity and enthusiasm. Every new concept and breakthrough not only propelled me forward but also deepened my understanding of the technical intricacies required to bring my ideas to life. The continuous evolution of my skills during this period was accompanied by a sense of growing excitement, as each milestone achieved brought me closer to the realization of my ultimate goal.
+                        
+                        The remarkable pace of progress during this time significantly fueled my passion and further solidified my belief in the immense potential of the project. It was during this transformative journey that I gained both technical proficiency and a reinforced conviction in the long-term success and impact of my platform. This dedication to learning and growth has not only equipped me with the necessary skills but also strengthened my resolve to continuously innovate and improve the project in the future.</p>
+                </div>
+            </div>
+            <div class="event">
+                <div class="event-date">October 2024</div>
+                <div class="arrow"></div>
+                <div class="event-content">
+                    <h2>Development Begins</h2>
+                    <p>By October, I had successfully reached a significant milestone in my journey, launching the initial public prototype of my platform, which included eight fully functional and playable games. This achievement not only served as a clear reflection of the countless hours and effort I had dedicated to the project but also marked the beginning of a new phase in its development. Despite the undeniable sense of accomplishment, the launch also unveiled a series of unforeseen challenges and obstacles that I had not anticipated.
+
+                        As the platform went live and users began interacting with it, the inherent limitations of its initial design became evident. Certain technical constraints, usability concerns, and performance issues surfaced, which were not immediately apparent during the development phase. This inevitably led to moments of discouragement, as I confronted the reality that my creation was far from perfect and required substantial refinement to meet the expectations I had set for it.
+                        
+                        However, instead of viewing these challenges as setbacks, I chose to embrace them as invaluable learning experiences. Each issue presented an opportunity for growth, prompting me to critically analyze user feedback and thoroughly evaluate areas where improvements could be made. I took a methodical approach to identify and address these weaknesses, prioritizing the most pressing concerns to enhance the platform’s functionality and user experience.
+                        
+                        Although these obstacles were initially disheartening, they reinforced my understanding that the path to success is rarely linear. With each failure, I gained deeper insights into the complexities of the project and the nuances of user interaction. I resolved to move forward with renewed determination and a strengthened sense of purpose, fully aware that every challenge I encountered was an essential step toward the refinement and eventual success of the platform. This mindset not only deepened my technical expertise but also fortified my resilience, reminding me that perseverance and continuous improvement are integral to the innovation process.</p>
+            </div>
+            </div>
+            <div class="event">
+                <div class="event-date">November 2024</div>
+                <div class="arrow"></div>
+                <div class="event-content">
+                    <h2>Iterative improvements</h2>
+                    <p>Throughout the month of November, my platform underwent a substantial transformation, evolving through a total of 14 distinct iterations, each one contributing to its gradual refinement and expansion. By the end of the month, the platform had grown to host 12 fully operational and engaging games, showcasing the progress and development made during this period. However, the path to this achievement was far from straightforward, as it was accompanied by numerous challenges that tested both my technical abilities and my perseverance.
+
+                        The journey was marked by persistent and recurring technical issues, which ranged from performance bottlenecks to unforeseen system malfunctions. These challenges not only delayed the pace of development but also caused a growing sense of frustration and discouragement. The complexity of addressing these issues, combined with the mounting pressure to deliver a fully functional product, led to a decision to temporarily shut down the platform for a period of four weeks. This hiatus, though difficult, provided a necessary pause for reflection and recalibration.
+                        
+                        During this four-week shutdown, I took the time to critically evaluate the project's direction, assess the root causes of the technical setbacks, and identify areas for improvement. It became a pivotal period for introspection, allowing me to step back from the day-to-day demands of development and consider more holistic strategies for overcoming the challenges at hand. This time of reflection proved to be incredibly valuable, as it enabled me to refine my approach, streamline workflows, and develop more effective solutions to the obstacles I had encountered.
+                        
+                        Upon returning to the project after this hiatus, I was equipped with a refreshed mindset and an enhanced set of strategies aimed at optimizing both the platform’s performance and its overall user experience. I implemented these new tactics with renewed vigor and clarity, focusing on addressing the technical flaws that had plagued the earlier stages of development. As a result, the platform emerged from this period of disruption more robust, functional, and user-centric than ever before.
+                        
+                        This phase of the project underscored several key lessons, most notably the importance of resilience in the face of adversity. It highlighted the undeniable value of taking the time to reflect, adapt, and iterate upon previous work in the pursuit of excellence. The experience reinforced my belief in the power of iterative development—an approach that fosters continuous improvement and allows for the gradual refinement of a product until it meets the highest standards of quality and user satisfaction. Above all, this period emphasized that setbacks are not a reflection of failure, but rather an integral part of the journey toward creating a polished, impactful product.</p>
+                </div>
+            </div>
+            <div class="event">
+                <div class="event-date">December 2024</div>
+                <div class="arrow"></div>
+                <div class="event-content">
+                    <h2>Massive game creation</h2>
+                    <p>During the December break, I dedicated myself fully to the next phase of development, immersing myself in the intricate and challenging process of game creation. Over the course of this intensive period, I successfully developed and integrated over 350 unique games into the platform, significantly expanding its breadth and functionality. This rapid expansion was accompanied by a rigorous process of refinement, as I advanced the platform to Prototype 32, achieving this milestone through 28 distinct iterations. Each iteration was a deliberate step forward, meticulously crafted to enhance both the user experience and the overall performance of the platform.
+
+                        A major focus during this phase was addressing the performance issues that had previously plagued the platform. I dedicated substantial time and effort to analyzing the root causes of system inefficiencies and optimizing the underlying code to eliminate lag and improve load times. These technical improvements were crucial in ensuring a seamless and smooth gaming experience for users, thus enhancing the platform’s reliability and responsiveness. In addition to tackling performance concerns, I also introduced dynamic elements into the games, aiming to create more engaging and immersive experiences. These enhancements included interactive features and real-time changes within the games, which not only elevated the entertainment value but also showcased the platform's growing sophistication.
+                        
+                        The culmination of these efforts resulted in a highly refined and robust platform, marked by both technical precision and a significantly enriched gaming environment. The progress achieved during this period was substantial, and just as momentum was peaking, with the platform nearing a level of polish that I had worked tirelessly to attain, an unexpected obstacle arose. The test website, which had served as the primary space for showcasing the platform’s developments, was suddenly blocked, disrupting the testing and deployment process. This unforeseen challenge posed a significant setback, presenting an unexpected hurdle at a critical juncture.
+                        
+                        Despite the frustrations and complications presented by this issue, I chose to view it not as a deterrent but as a temporary obstacle to be overcome. The progress made during the December period, with its vast expansion of games, technical optimizations, and overall improvements to the platform, reinforced my unwavering belief in the long-term potential and success of the project. The setback served as a reminder that the path to innovation is often non-linear and fraught with challenges, but it also solidified my commitment to the project and my determination to find solutions to any problem that might arise.
+                        
+                        This phase of development, while marked by both significant progress and unexpected adversity, further reinforced key lessons in resilience, adaptability, and perseverance. The work done during this period—spanning the creation of hundreds of games, the resolution of complex technical issues, and the enhancement of the platform’s overall experience—served to deepen my conviction in the viability and long-term success of the platform. It became clear that, while setbacks may occur, the continuous pursuit of excellence and innovation would ultimately drive the project to its full potential.</p>
+                </div>
+            </div>
+            <div class="event">
+                <div class="event-date">January 2025</div>
+                <div class="arrow"></div>
+                <div class="event-content">
+                    <h2>Community Growth and Challenges</h2>
+                    <p>As I stepped into 2025, I marked a pivotal milestone in my journey by launching a significant platform update that drew the attention and enthusiasm of 400 dedicated fans. This growing community served as a powerful validation of my relentless efforts, reinforcing the value of the countless hours spent refining, expanding, and optimizing the platform. Witnessing the influx of users who appreciated and engaged with the evolving project brought an immense sense of fulfillment and a renewed belief in the platform’s potential to make a lasting impact.
+
+                        Amid this momentum, a new and exciting chapter unfolded as I welcomed a close friend to the development team. This collaboration infused the project with fresh energy and diverse perspectives, fostering an environment of creativity, shared ambition, and mutual support. The addition of a trusted teammate not only accelerated development but also introduced a sense of camaraderie, transforming what had largely been a solo endeavor into a collective pursuit of innovation and excellence.
+                        
+                        However, this period of progress was not without its share of challenges. The success of the platform was tempered by moments of discouragement, stemming from both external pressures and unforeseen obstacles. Some peers expressed skepticism about the project’s viability, their doubts occasionally casting shadows on my confidence. Compounding this were recurring technical setbacks, as test websites continued to face repeated blocks, disrupting the feedback loop and complicating the testing process. Each blockage felt like a step backward, threatening to stall the platform’s development and dampen the momentum I had worked so hard to build.
+                        
+                        Despite these setbacks, my resolve remained unshaken. The unwavering support of loyal users, whose enthusiasm and constructive feedback affirmed the platform’s value, became a source of constant motivation. Their belief in the project served as a reminder of why I had embarked on this journey in the first place — to create a meaningful, enjoyable experience for a community that genuinely appreciated the work. Additionally, the encouragement and steadfast optimism of my new teammate provided a crucial anchor during moments of doubt. Their shared commitment to the project and belief in its success helped me navigate the difficult periods, turning discouragement into fuel for perseverance.
+                        
+                        This phase of development reinforced the importance of resilience, adaptability, and the strength that comes from surrounding oneself with supportive collaborators and a dedicated community. While the path was fraught with obstacles, each challenge became an opportunity to learn, grow, and refine both the platform and my own capacity to lead and persist. Entering this new chapter with a stronger team and a passionate user base solidified my conviction that, no matter the difficulties encountered, the vision of creating something truly impactful was well within reach.</p>
+                </div>
+            </div>
+            <div class="event">
+                <div class="event-date">February 2024</div>
+                <div class="arrow"></div>
+                <div class="event-content">
+                    <h2>Platform Evolution</h2>
+                    <p> By February, the platform had evolved into a sophisticated, feature-rich hub, a testament to months of relentless dedication, continuous learning, and an unwavering pursuit of excellence. Each line of code, every design decision, and all the late nights spent refining the system had culminated in a polished product that stood as a living embodiment of persistence and innovation. What had once been a fledgling idea had now flourished into a dynamic ecosystem, meticulously crafted to provide users with an experience that was both seamless and immersive.
+
+                    One of the most significant advancements during this period was the implementation of a comprehensive user authentication system, introducing secure signups and logins that laid the groundwork for a more personalized and protected user environment. This enhancement not only elevated the platform’s professionalism but also fostered a deeper sense of trust within the community, as users could now engage with the platform under their unique profiles, preserving their progress and preferences.
+                    
+                    Simultaneously, I delved into the intricacies of SCSS, leveraging its powerful capabilities to refine the platform’s visual identity. Every aspect of the design — from intricate animations to responsive layouts — was carefully calibrated to enhance usability without compromising aesthetics. The platform’s interface became a fluid, visually cohesive experience where form met function, showcasing the meticulous attention to detail that had been poured into every corner of development.
+                    
+                    In parallel, I engineered a dynamic user display, further amplifying the platform's interactivity and fostering a vibrant community atmosphere. This feature breathed life into the platform, transforming it from a static collection of games into a living, evolving space where users could see each other’s presence, share experiences, and feel connected to a larger collective. The once solitary gaming experience had blossomed into a shared digital realm, where every user became an integral thread in the fabric of the platform’s growing legacy.
+                    
+                    Despite these triumphs, the journey was not without its trials. As with any evolving project, not every user stayed for the long haul. Some drifted away, seeking alternative experiences or losing interest as the platform underwent rapid changes. Yet, what remained was more powerful than fleeting numbers — a core community of steadfast supporters who believed in the platform’s vision as fiercely as I did. Their loyalty, feedback, and continuous engagement served as both a reminder of the platform’s impact and a beacon of motivation to push forward, regardless of setbacks.
+                    
+                    In an unexpected turn of events, a rival website — once perceived as a formidable competitor — shut down. This development, while surprising, became a profound moment of reflection. It underscored the fragility of platforms that lacked adaptability and highlighted the quiet strength of perseverance. My platform had endured because it was built on a foundation of resilience, constantly evolving to meet new challenges and embracing every failure as an opportunity to grow. The platform’s survival, and indeed its thriving existence, became a source of immense pride, a powerful validation that persistence, adaptability, and an unyielding passion for innovation are the true cornerstones of long-term success.
+                    
+                    This chapter of the platform’s evolution was not just about technical progress or community growth — it was a living lesson in what it means to build something with heart. It taught me that the path to meaningful creation is often riddled with obstacles, but that every challenge overcome, every feature perfected, and every user who remains is a victory in its own right. The platform had become more than just a project; it was a testament to the belief that vision, when fortified by resilience and fueled by passion, can defy expectations and carve out a lasting impact.
+                    
+                    As I looked ahead to the future, the platform stood as a symbol of what was possible when innovation met determination. It was not just a hub for games but a living, breathing ecosystem — a space where creativity thrived, connections flourished, and the relentless pursuit of excellence became a shared journey. And with each new iteration, I carried forward the unshakable belief that the best was yet to come.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </section>
+    <section id="section2" class="section" style="display:none;">
+        <div class="container">
+        <div class="timeline">
+            <div class="event">
+                
+                <div class="arrow"></div>
+                <div class="event-content">
+                    <div class="hi">
+                    <p>Commits on Feb 23, 2025<br>
+                        Update index.html<br>
+                        everything2learn authored 3 hours ago · Verified</p>
+                        
+                        <p>Update index.html<br>
+                        everything2learn authored 3 hours ago · Verified</p>
+                        
+                        <p>Commits on Feb 22, 2025<br>
+                        Update README.md<br>
+                        everything2learn authored yesterday · Verified</p>
+                        
+                        <p>Commits on Feb 21, 2025<br>
+                        Create README.md<br>
+                        everything2learn authored 2 days ago · Verified</p>
+                        
+                        <p>Update index.html<br>
+                        everything2learn authored 2 days ago · Verified</p>
+                        
+                        <p>Update index.html<br>
+                        everything2learn authored 2 days ago · Verified</p>
+                        
+                        <p>FRICKEN EAT UP THE DAMN F- ing SIDEBAR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!<br>
+                        everything2learn authored 2 days ago · Verified</p>
+                        
+                        <p>Destroy SIDEBAR<br>
+                        everything2learn authored 2 days ago · Verified</p>
+                        
+                        <p>Destroy Sidebar<br>
+                        everything2learn authored 2 days ago · Verified</p>
+                        
+                        <p>Destroy Sidebar<br>
+                        everything2learn authored 2 days ago · Verified</p>
+                        
+                        <p>Destroy Sidebar<br>
+                        everything2learn authored 2 days ago · Verified</p>
+                        
+                        <p>Update index.html<br>
+                        everything2learn authored 2 days ago · Verified</p>
+                        
+                        <p>New Look: NO SIDEBAR<br>
+                        everything2learn authored 2 days ago · Verified</p>
+                        
+                        <p>Update index.html<br>
+                        everything2learn authored 2 days ago · Verified</p>
+                        
+                        <p>fix lag<br>
+                        everything2learn authored 2 days ago · Verified</p>
+                        
+                        <p>Commits on Feb 20, 2025<br>
+                        Add files via upload<br>
+                        everything2learn authored 3 days ago · Verified</p>
+                        
+                        <p>Commits on Aug 1, 2024<br>
+                        Update index.html<br>
+                        Mac-Web authored on Aug 1, 2024 · Verified</p>
+                        
+                        <p>MacVG August Update!!!<br>
+                        Mac-Web committed on Aug 1, 2024</p>
+                        
+                        <p>Commits on Jun 29, 2024<br>
+                        Merge branch 'main' of https://github.com/Mac-Web/macvg<br>
+                        Mac-Web committed on Jun 29, 2024</p>
+                        
+                        <p>MacVG July Update!!!<br>
+                        Mac-Web committed on Jun 29, 2024</p>
+                        
+                        <p>Commits on Jun 5, 2024<br>
+                        Fixed broken icons & images<br>
+                        Mac-Web authored on Jun 5, 2024 · Verified</p>
+                        
+                        <p>Commits on Jun 4, 2024<br>
+                        Added Survey<br>
+                        Mac-Web authored on Jun 4, 2024 · Verified</p>
+                        
+                        <p>Added Survey<br>
+                        Mac-Web authored on Jun 4, 2024 · Verified</p>
+                        
+                        <p>Commits on Jun 3, 2024<br>
+                        Thicker scrollbar<br>
+                        Mac-Web authored on Jun 3, 2024 · Verified</p>
+                        
+                        <p>Thicker scrollbar<br>
+                        Mac-Web authored on Jun 3, 2024 · Verified</p>
+                        
+                        <p>Commits on Jun 1, 2024<br>
+                        MacVG June Update!!!<br>
+                        Mac-Web committed on Jun 1, 2024</p>
+                        
+                        <p>Commits on May 17, 2024<br>
+                        MacBoard Update<br>
+                        Mac-Web committed on May 17, 2024</p>
+                        
+                        <p>Commits on May 7, 2024<br>
+                        Merge branch 'main' of https://github.com/Mac-Web/macvg<br>
+                        Mac-Web committed on May 7, 2024</p>
+                        
+                        <p>Game Content Info Update Mac-Web#4<br>
+                        Mac-Web committed on May 7, 2024</p>
+                        
+                        <p>Commits on May 6, 2024<br>
+                        Update app.js<br>
+                        Mac-Web authored on May 6, 2024 · Verified</p>
+                        
+                        <p>Commits on May 4, 2024<br>
+                        Game Content Info Update 3<br>
+                        Mac-Web committed on May 4, 2024</p>
+                        
+                        <p>MacBoard Update<br>
+                        Mac-Web committed on May 4, 2024</p>
+                        
+                        <p>Game Info Content Update 2<br>
+                        Mac-Web committed on May 4, 2024</p>
+                        
+                        <p>Commits on May 2, 2024<br>
+                        Game Info Content Update 1<br>
+                        Mac-Web committed on May 2, 2024</p>
+                        
+                        <p>Commits on Apr 30, 2024<br>
+                        Merge branch 'main' of https://github.com/Mac-Web/macvg<br>
+                        Mac-Web committed on Apr 30, 2024</p>
+                        
+                        <p>Commits on Apr 30, 2024
+                            MacVG May Update!!!
+                            Mac-Web
+                            Mac-Web
+                            committed
+                            on Apr 30, 2024</p>
+                            <p>Commits on Apr 21, 2024
+                            Merge pull request Mac-Web#4 from DicKyRicK/main
+                            Mac-Web
+                            Mac-Web
+                            authored
+                            on Apr 21, 2024
+                            Verified</p>
+                            <p>Delete CNAME
+                            author
+                            DicKyRicK
+                            authored
+                            on Apr 21, 2024
+                            Verified</p>
+                            <p>Create CNAME
+                            author
+                            DicKyRicK
+                            authored
+                            on Apr 21, 2024
+                            Verified</p>
+                            <p>Commits on Apr 20, 2024
+                            File cleaning updates
+                            Mac-Web
+                            Mac-Web
+                            committed
+                            on Apr 20, 2024</p>
+                            <p>Commits on Apr 12, 2024
+                            Run 3 fix :(
+                            Mac-Web
+                            Mac-Web
+                            authored
+                            on Apr 12, 2024
+                            Verified</p>
+                            <p>Oops
+                            Mac-Web
+                            Mac-Web
+                            authored
+                            on Apr 12, 2024
+                            Verified</p>
+                            <p>Commits on Apr 11, 2024
+                            Merge pull request Mac-Web#3 from 3kho/main
+                            Mac-Web
+                            Mac-Web
+                            authored
+                            on Apr 11, 2024
+                            Verified</p>
+                            <p>Cleanup
+                            3kh0
+                            3kh0
+                            authored
+                            on Apr 11, 2024
+                            Verified</p>
+                            <p>Run 3 finally here!!!
+                            Mac-Web
+                            Mac-Web
+                            committed
+                            on Apr 11, 2024</p>
+                            <p>Commits on Apr 10, 2024
+                            Add files via upload
+                            Mac-Web
+                            Mac-Web
+                            authored
+                            on Apr 10, 2024
+                            Verified</p>
+                            <p>Commits on Apr 8, 2024
+                            Download Rework patch update
+                            Mac-Web
+                            Mac-Web
+                            authored
+                            on Apr 8, 2024
+                            Verified</p>
+                            <p>Merge branch 'main' of https://github.com/Mac-Web/macvg
+                            Mac-Web
+                            Mac-Web
+                            committed
+                            on Apr 8, 2024</p>
+                            <p>Emergency Download Rework fix patch update
+                            Mac-Web
+                            Mac-Web
+                            committed
+                            on Apr 8, 2024</p>
+                            <p>Delete projects/zips
+                            Mac-Web
+                            Mac-Web
+                            authored
+                            on Apr 8, 2024
+                            Verified</p>
+                            <p>Create zips
+                            Mac-Web
+                            Mac-Web
+                            authored
+                            on Apr 8, 2024
+                            Verified</p>
+                            <p>Commits on Apr 1, 2024
+                            Update index.html
+                            Mac-Web
+                            Mac-Web
+                            authored
+                            on Apr 1, 2024
+                            Verified</p>
+                            <p>Maintenance ended
+                            Mac-Web
+                            Mac-Web
+                            authored
+                            on Apr 1, 2024
+                            Verified</p>
+                            <p>Emergency fix #13
+                            Mac-Web
+                            Mac-Web
+                            committed
+                            on Apr 1, 2024</p>
+                            <p>Emergency fix #12
+                            Mac-Web
+                            Mac-Web
+                            committed
+                            on Apr 1, 2024</p>
+                            <p>Emergency fix #11
+                            Mac-Web
+                            Mac-Web
+                            committed
+                            on Apr 1, 2024</p>
+                            <p>Emergency fix #10
+                            Mac-Web
+                            Mac-Web
+                            committed
+                            on Apr 1, 2024</p>
+                            <p>Emergency fix #9
+                            Mac-Web
+                            Mac-Web
+                            committed
+                            on Apr 1, 2024</p>
+                            <p>Emergency fix #8
+                            Mac-Web
+                            Mac-Web
+                            committed
+                            on Apr 1, 2024</p>
+                            <p>Emergency fix #8
+                            Mac-Web
+                            Mac-Web
+                            committed
+                            on Apr 1, 2024</p>
+                            <p>Emergency fix #7
+                            Mac-Web
+                            Mac-Web
+                            committed
+                            on Apr 1, 2024</p>
+                            <p>Emergency fix #6
+                            Mac-Web
+                            Mac-Web
+                            committed
+                            on Apr 1, 2024</p>
+                            <p>Emergency fix Mac-Web#5
+                            Mac-Web
+                            Mac-Web
+                            committed
+                            on Apr 1, 2024</p>
+                            <p>Emergency fix Mac-Web#4
+                            Mac-Web
+                            Mac-Web
+                            committed
+                            on Apr 1, 2024</p>
+                            <p>Emergency fix Mac-Web#3
+                            Mac-Web
+                            Mac-Web
+                            committed
+                            on Apr 1, 2024</p>
+                            <p>Emergency fix Mac-Web#2
+                            Mac-Web
+                            Mac-Web
+                            committed
+                            on Apr 1, 2024</p>
+                            <p>Emergency fix Mac-Web#1
+                            Mac-Web
+                            Mac-Web
+                            committed
+                            on Apr 1, 2024</p>
+                            <p>Commits on Mar 31, 2024
+                            Add files via upload
+                            Mac-Web
+                            Mac-Web
+                            authored
+                            on Mar 31, 2024
+                            Verified</p>
+                            <p>Add files via upload
+                            Mac-Web
+                            Mac-Web
+                            authored
+                            on Mar 31, 2024
+                            Verified</p>
+                            <p>Add files via upload
+                            Mac-Web
+                            Mac-Web
+                            authored
+                            on Mar 31, 2024
+                            Verified</p>
+                            <p>Commits on Mar 31, 2024
+                            Add files via upload
+                            Mac-Web
+                            Mac-Web
+                            authored
+                            on Mar 31, 2024
+                            Verified</p>
+                            <p>MacVG April Update!!!
+                            Mac-Web
+                            Mac-Web
+                            committed
+                            on Mar 31, 2024</p>
+                            <p>Commits on Mar 21, 2024
+                            Monkey Mart Partch Update!
+                            Mac-Web
+                            Mac-Web
+                            authored
+                            on Mar 21, 2024
+                            Verified</p>
+                            <p>Commits on Mar 1, 2024
+                            MacVG March Update!!!
+                            Mac-Web
+                            Mac-Web
+                            committed
+                            on Mar 1, 2024</p>
+                            <p>Commits on Jan 31, 2024
+                            MacVG February 2.1 Update!!!
+                            Mac-Web
+                            Mac-Web
+                            committed
+                            on Jan 31, 2024</p>
+                            <p>Commits on Jan 8, 2024
+                            First weekly update of the Trending Tab!
+                            Mac-Web
+                            Mac-Web
+                            authored
+                            on Jan 8, 2024
+                            Verified</p>
+                            <p>Delete trending.html
+                            Mac-Web
+                            Mac-Web
+                            authored
+                            on Jan 8, 2024
+                            Verified</p>
+                            <p>Commits on Jan 6, 2024
+                            Merge branch 'main' of https://github.com/Mac-Web/macvg
+                            Mac-Web
+                            Mac-Web
+                            committed
+                            on Jan 6, 2024</p>
+                            
+                </div>
+            </div>
+            </div>
+            </div>
+    </section>
+    <script>
+        // Function to change sections
+function changeSection(sectionId) {
+    // Get all sections
+    const sections = document.querySelectorAll('.section');
+    
+    // Hide all sections
+    sections.forEach(section => {
+        section.style.display = 'none';
+    });
+    
+    // Show the selected section
+    const activeSection = document.getElementById(sectionId);
+    if (activeSection) {
+        activeSection.style.display = 'block';
+    }
+}
+
+// HTML Structure Example:
+// <button onclick="changeSection('section1')">Section 1</button>
+// <button onclick="changeSection('section2')">Section 2</button>
+// <div id="section1" class="section">Content for Section 1</div>
+// <div id="section2" class="section" style="display:none;">Content for Section 2</div>
+
+// Let me know if you’d like me to enhance this or add animations! 🚀
+
+    </script>
+</body>
+</html>
