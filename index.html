@@ -111,57 +111,185 @@
 }
 
 .img-nooh {
+    width: 300px;
+    height: 450px;
+    border-radius: 15px;
+}
+ #img-nooh {
     width: 480px;
     height: 640px;
-}
-        #img-nooh {
-    width: 480px;
-    height: 640px;
+    border-radius: 15px;
 }
 
- #left-section-container {
-            background: navy;
-        }
-        #right-section-container {
-            background: lightblue;
-        }
-        .section {
-            font-size: 2rem;
-            color: white;
-            cursor: pointer;
-            text-align: center;
-        }
-        .info {
-            display: none;
-            font-size: 1.2rem;
-            color: white;
-            margin-top: 10px;
-            text-align: center;
-        }
+.about-us {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
 
-         .section-container {
-            width: 50%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            border: 5px solid white;
-            border-radius: 10px;
+.about-section {
+    width: 45%;
+    padding: 20px;
+    background: #313244;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.right {
+    text-align: left;
+}
+.hello {
+    z-index: 10;
+}
+.text-box {
             padding: 20px;
+            background: #313244;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease;
         }
+        .text-box:hover {
+            background-color: #89b4fa;
+            color: #1e1e2e;
+        }
+        .animate {
+            animation: pop 0.3s ease forwards;
+        }
+        @keyframes pop {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+     
+        .dynamic-text {
+            font-size: 3rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            background: linear-gradient(90deg, #ff8a00, #e52e71, #007bff, #00ff88);
+            background-size: 400% 400%;
+           
+            -webkit-text-fill-color: transparent;
+            animation: gradientShift 6s ease infinite, textGlow 1.5s ease-in-out infinite alternate, bounceIn 1s ease;
+            transition: transform 0.3s ease, letter-spacing 0.3s ease;
+            cursor: pointer;
+        }
+
+        .dynamic-text:hover {
+            transform: scale(1.1) rotate(3deg);
+            letter-spacing: 8px;
+            animation: hoverGlow 0.5s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes gradientShift {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        @keyframes textGlow {
+            0% {
+                text-shadow: 0 0 10px #ff8a00, 0 0 20px #e52e71, 0 0 30px #007bff;
+            }
+            100% {
+                text-shadow: 0 0 20px #00ff88, 0 0 30px #ff8a00, 0 0 40px #e52e71;
+            }
+        }
+
+        @keyframes hoverGlow {
+            0% {
+                text-shadow: 0 0 20px #00ff88, 0 0 30px #ff8a00, 0 0 40px #e52e71;
+            }
+            100% {
+                text-shadow: 0 0 30px #ff00ff, 0 0 40px #00ffff, 0 0 50px #ff8a00;
+            }
+        }
+
+        @keyframes bounceIn {
+            0% {
+                transform: scale(0.3);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+.about-section2 {
+    width: 45%;
+    padding: 20px;
+    background: #313244;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.right2 {
+    text-align: left;
+}
+
+.about-us2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.img-niam {
+    height: 450px;
+    width: 350px;
+    border-radius: 15px;
+}
+
+
+        .info {
+            cursor: pointer;
+        }            
         
+        .hidden {
+            display: none;
+            margin-top: 10px;
+        }
+        .info:hover {
+            background-color: #3498db;
+            color: white;
+            border-radius: 15px;
+        }
     </style>
 </head>
 <body>
+    <div class="hello">
     <center>
     <h1>My GameHub Creation Journey</h1>
-     <button onclick="changeSection('section1')" class="btn primary">Narrative</button>
-     <button onclick="changeSection('section2')" class="btn secondary">Commits</button>
-          <button onclick="changeSection('section3')" class="btn primary">About Us</button>
-        <button onclick="changeSection(section4)" class="btn-secondary">Who we are</button>
+     <button onclick="changeSection('section1')" class="btn primary" style="z-index: 11;">Narrative</button>
+     <button onclick="changeSection('section2')" class="btn secondary" style="z-index: 11;">Commits</button>
+          <button onclick="changeSection('section3')" class="btn primary" style="z-index: 11;">Nooh Siddique</button>
+        <button onclick="changeSection('section4')" class="btn secondary" style="z-index: 11;">Niam Nangalia</button>
      </center>
-    <section id="section1" class="section">
+
+  
+   
+    <section id="section1" class="section"  >
+        
     <div class="container">
       
         <div class="timeline">
@@ -185,6 +313,7 @@
                         The remarkable pace of progress during this time significantly fueled my passion and further solidified my belief in the immense potential of the project. It was during this transformative journey that I gained both technical proficiency and a reinforced conviction in the long-term success and impact of my platform. This dedication to learning and growth has not only equipped me with the necessary skills but also strengthened my resolve to continuously innovate and improve the project in the future.</p>
                 </div>
             </div>
+            
             <div class="event">
                 <div class="event-date">October 2024</div>
                 <div class="arrow"></div>
@@ -658,38 +787,52 @@
             </div>
             </div>
     </section>
-    <section id="section3" class="section" style="display= none;">
-         <div class="container">
-      
+    <section id="section3" class="section" style="display: none;">
+        <div class="container">
+            <div class="about-us">
+                <div class="about-section left">
+                    <h2>Nooh Siddique</h2>
+                    <center>
+                    <img src="IMG_5531.jpeg" class="img-nooh">
+                    </center>
+                </div>
+                <div class="about-section right">
+                    <h2>Our Team</h2>
+                     <div class="text-box" id="text-box" onclick="toggleText()">
+                        Hi, my name is Nooh Siddique! I’m 11 years old and a sixth grader at BLMS. I have a lot of different interests and love spending my time exploring new things. I’m really passionate about sports — I enjoy playing soccer, swimming, and cricket whenever I get the chance.
 
-       
+                        When I’m not playing sports, I like building with Legos and driving RC cars. I also have a big interest in cars in general and love learning more about them. Another one of my favorite hobbies is coding. I’ve learned a bunch of programming languages, including JavaScript, LaTeX, HTML, XML, YAML, CSS, SCSS, Python, and Node. I also use tools like Overleaf to work on my coding projects.
+                        
+                        In addition to sports and coding, I’m a big fan of video games. Some of my favorites are Fortnite, Apex Legends, Call of Duty, and Brawl Stars. Whether I’m working on a new coding project, playing my favorite games, or spending time outside playing sports, I’m always excited to learn and try new things!
+                                   </div>
                 
-                 <div id="left-section-container" class="section-container">
-            <div id="left-section" class="section"><img src="IMG_5531.jpeg" class="img-nooh" alt="image of the GOAT NOOOOOOOH!!!!!"></img></div>
-        </div>
-        <div id="right-section-container" class="section-container">
-            <div id="right-section" class="section">
-                <h2>Nooh Siddique</h2>
-                <p>akdjfs</p>
             </div>
+</div>
+            <br>
+           </div>
         </div>
-        
-                
-                 <div id="left-section-container2" class="section-container2">
-            <div id="left-section2" class="section2"><img src="Screenshot 2025-02-25 155852" class="img-nooh" alt="image of the GOAT Niammmmmmmmmmmmm!!!!!!!"></img></div>
         </div>
-        <div id="right-section-container" class="section-container">
-            <div id="right-section" class="section">
+    </section>
+    <section id="section4" class="section" style="display: none;">
+        <div class="container">
+        <div class="about-us">
+            <div class="about-section left">
                 <h2>Niam Nangalia</h2>
-               <div id="right-section" class="section" onclick="toggleInfo('right-info')">My name is Niam, and I am 12 years old, currently in 6th grade. I love coding because it allows me to create and bring my ideas to life, and I’m always looking for ways to expand my skills. My family—my mom, dad, and older brother—means a lot to me, and they always encourage me to follow my passions. My brother and I have our fair share of playful arguments, but we share common interests and influence each other’s hobbies. Outside of coding, one of my favorite things is sushi—I love its flavors and textures and could eat it all the time. I also dream of traveling to Greece and Hawaii someday; Greece fascinates me with its history and architecture, while Hawaii's tropical beauty and outdoor adventures seem amazing. School keeps me busy, and I enjoy subjects that challenge me, especially those that involve problem-solving. As I look toward the future, I am excited to continue learning, exploring new opportunities, and working on projects that fuel my creativity and interests.</div>
-          <div id="right-info" class="info">About Our Game Hub The Vision Behind Our Game Hub Our game hub is more than just a collection of online games—it's a passion project built by two dedicated gamers and coders, me and Nooh Siddique. We both share a deep love for gaming and coding, and we wanted to create a platform that brings together the best online games in one place. Unlike other game hubs that simply list games, our goal is to provide a seamless, enjoyable, and user-friendly experience where players can easily find, play, and enjoy games without unnecessary distractions. We are designing this hub to stand out with its unique features, smooth interface, and an ever-growing collection of exciting games. A Hub Designed by Gamers, for Gamers As gamers ourselves, we know what makes a great gaming experience. We understand the frustration of slow-loading games, hard-to-navigate menus, and cluttered websites filled with ads. That’s why we are putting extra effort into making our game hub a place where players can instantly access their favorite games without any hassle. From carefully curating a diverse selection of games to ensuring a fast, clean, and responsive website, we are building this hub with the player in mind. Our goal is to make it the ultimate destination for gamers who want an easy way to play games without jumping through hoops. The Power of Coding in Our Project One of the biggest strengths of our game hub is the coding behind it. Since I love coding, I’m always looking for ways to improve the functionality of the website, whether it's through optimizing game loading times, implementing smooth navigation, or creating a visually appealing design. Nooh and I are constantly experimenting with new features, refining our code, and making sure the hub runs as efficiently as possible. We want to make sure the site isn’t just a collection of links, but an actual platform that enhances the gaming experience with smart coding solutions that make everything work better. Expanding the Library of Games A game hub is only as good as the games it offers, which is why we are committed to adding as many high-quality games as possible. We are always on the lookout for new and exciting games to include, making sure there’s something for everyone. Whether you enjoy action, horror, puzzles, or casual games, our hub will have a category for you. Our goal is to make the game selection process simple and fun, allowing players to explore different genres and discover new favorites. By continuously updating our collection, we ensure that our hub stays fresh and exciting for both new and returning players. The Fun Behind the Project While coding and developing the game hub is a lot of work, it’s also incredibly fun. Since both Nooh and I love playing games, working on this project doesn’t feel like a chore—it’s something we genuinely enjoy. We get to test out games, experiment with different layouts, and think of creative ways to improve the site. It’s not just about making a website; it’s about creating something that we would love to use ourselves. We both believe that when you work on something you’re passionate about, it turns out even better, and that’s exactly what’s happening with our game hub. More Than Just a Game Hub At the end of the day, this project is about more than just making a website; it’s about building something we’re proud of. It’s a space where we can bring together our love for coding, gaming, and creativity into one amazing platform. As we continue to work on it, we’re always thinking about how we can make it better, more enjoyable, and more accessible to everyone who loves games as much as we do. Our goal is to create something lasting, something that stands out from the rest, and something that gamers everywhere will appreciate and enjoy.</div>
-            
+                <center>
+                <img src="niam.png" class="img-niam" />
+                </center>
             </div>
-        </div>     
+            <div class="about-section right">
+                <p class="info" id="clickText" onclick="switchText()">My name is Niam, and I am 12 years old, currently in 6th grade. I love coding because it allows me to create and bring my ideas to life, and I’m always looking for ways to expand my skills. My family—my mom, dad, and older brother—means a lot to me, and they always encourage me to follow my passions. My brother and I have our fair share of playful arguments, but we share common interests and influence each other’s hobbies. Outside of coding, one of my favorite things is sushi—I love its flavors and textures and could eat it all the time. I also dream of traveling to Greece and Hawaii someday; Greece fascinates me with its history and architecture, while Hawaii's tropical beauty and outdoor adventures seem amazing. School keeps me busy, and I enjoy subjects that challenge me, especially those that involve problem-solving. As I look toward the future, I am excited to continue learning, exploring new opportunities, and working on projects that fuel my creativity and interests.</p>
+                
+        </div>
+        </div>
+        </div>
         
     </section>
 
-    <section id="section4">
+    <section id="section5" class="section" style="display: none;">
+        <div class="container">
         <p>The Vision Behind Our Game Hub
 
 Our game hub is more than just a collection of online games—it's a passion project built by two dedicated gamers and coders, me and Nooh Siddique. We both share a deep love for gaming and coding, and we wanted to create a platform that brings together the best online games in one place. Unlike other game hubs that simply list games, our goal is to provide a seamless, enjoyable, and user-friendly experience where players can easily find, play, and enjoy games without unnecessary distractions. We are designing this hub to stand out with its unique features, smooth interface, and an ever-growing collection of exciting games.
@@ -713,8 +856,8 @@ While coding and developing the game hub is a lot of work, it’s also incredibl
 More Than Just a Game Hub
 
 At the end of the day, this project is about more than just making a website; it’s about building something we’re proud of. It’s a space where we can bring together our love for coding, gaming, and creativity into one amazing platform. As we continue to work on it, we’re always thinking about how we can make it better, more enjoyable, and more accessible to everyone who loves games as much as we do. Our goal is to create something lasting, something that stands out from the rest, and something that gamers everywhere will appreciate and enjoy.</p>
-        
-    </section>
+
+    </div>
     <script>
         function toggleInfo(id) {
             var info = document.getElementById(id);
@@ -752,5 +895,25 @@ function changeSection(sectionId) {
 // Let me know if you’d like me to enhance this or add animations! 🚀
 
     </script>
-</body>
+    <script>
+      let toggled = false;
+      function toggleText() {
+          const box = document.getElementById('text-box');
+          box.classList.add('animate');
+          box.innerHTML = toggled ? "Hi, my name is Nooh Siddique! I’m 11 years old and a sixth grader at BLMS. I have a lot of different interests and love spending my time exploring new things. I’m really passionate about sports — I enjoy playing soccer, swimming, and cricket whenever I get the chance. When I’m not playing sports, I like building with Legos and driving RC cars. I also have a big interest in cars in general and love learning more about them. Another one of my favorite hobbies is coding. I’ve learned a bunch of programming languages, including JavaScript, LaTeX, HTML, XML, YAML, CSS, SCSS, Python, and Node. I also use tools like Overleaf to work on my coding projects. In addition to sports and coding, I’m a big fan of video games. Some of my favorites are Fortnite, Apex Legends, Call of Duty, and Brawl Stars. Whether I’m working on a new coding project, playing my favorite games, or spending time outside playing sports, I’m always excited to learn and try new things!" : "Nooh Siddique is a multifaceted individual whose life is a blend of creativity, perseverance, and an insatiable curiosity for learning. From a young age, Nooh exhibited a deep interest in technology, eagerly dismantling gadgets to understand their inner workings and experimenting with basic programming concepts. What started as a childhood fascination grew into a lifelong passion, propelling him toward a journey of coding and software development that continues to shape his identity to this day. Nooh’s love for coding isn't just about writing lines of code — it's about solving problems and creating experiences that bring joy to others. He finds immense satisfaction in building projects from scratch, meticulously refining every detail until his vision comes to life. Whether he’s developing complex algorithms or designing sleek, user-friendly interfaces, Nooh approaches each task with an unwavering commitment to excellence. He’s constantly exploring new programming languages, frameworks, and techniques, always eager to push the boundaries of what he can create. Outside of coding, Nooh is a devoted sports enthusiast with a special love for soccer. The thrill of the game, the strategic teamwork, and the sheer physicality of playing on the field offer him a perfect balance to his digital pursuits. Soccer isn’t just a hobby for Nooh — it's a source of discipline, resilience, and camaraderie. He relishes every match, whether he’s competing with friends at the local field or watching his favorite teams battle it out on screen. The lessons he learns from soccer — teamwork, perseverance, and the importance of practice — seamlessly translate into his work as a coder, reinforcing his belief that growth comes from continuous effort and a willingness to learn from mistakes. In his leisure time, Nooh enjoys immersing himself in the world of gaming, with Fortnite holding a special place in his heart. The game’s fast-paced action, creative building mechanics, and ever-evolving landscape captivate him, providing a space to unwind and connect with friends. For Nooh, gaming isn’t just a pastime; it's a way to fuel his creativity and draw inspiration for his coding projects. The immersive worlds and intricate game designs spark new ideas, driving him to experiment with developing his own games and interactive experiences. Beyond his technical skills and athletic pursuits, Nooh is known for his kindness, humility, and infectious enthusiasm. He’s the kind of person who lifts others up, always willing to share his knowledge, offer encouragement, and collaborate on projects. His friends admire his relentless optimism and ability to find the silver lining in any challenge, whether it's debugging a stubborn piece of code or rallying his team after a tough loss on the soccer field. Nooh’s life is a testament to the power of passion and perseverance. He approaches every aspect of his life — coding, sports, gaming, and friendships — with a genuine love and dedication that inspire those around him. His journey is far from over, and with each new project, match, or game, Nooh continues to grow, learn, and shape a future where his creativity and determination leave a lasting impact.";
+          toggled = !toggled;
+          setTimeout(() => box.classList.remove('animate'), 300);
+      }
+    </script>
+      
+    <script>
+        function switchText() {
+            var textElement = document.getElementById("clickText");
+            if (textElement.innerHTML === "My name is Niam, and I am 12 years old, currently in 6th grade. I love coding because it allows me to create and bring my ideas to life, and I’m always looking for ways to expand my skills. My family—my mom, dad, and older brother—means a lot to me, and they always encourage me to follow my passions. My brother and I have our fair share of playful arguments, but we share common interests and influence each other’s hobbies. Outside of coding, one of my favorite things is sushi—I love its flavors and textures and could eat it all the time. I also dream of traveling to Greece and Hawaii someday; Greece fascinates me with its history and architecture, while Hawaii's tropical beauty and outdoor adventures seem amazing. School keeps me busy, and I enjoy subjects that challenge me, especially those that involve problem-solving. As I look toward the future, I am excited to continue learning, exploring new opportunities, and working on projects that fuel my creativity and interests.") {
+                textElement.innerHTML = "My name is Niam, and I am 12 years old, currently in 6th grade. I have a passion for coding because it allows me to create and bring my ideas to life, turning imagination into reality. I’m always eager to learn new programming languages, experiment with different projects, and challenge myself to solve complex problems. Whether it's building small games, designing websites, or exploring new technologies, coding never fails to excite me. My family—my mom, dad, and older brother—plays a huge role in my life. They always encourage me to follow my passions and support me through every step of my learning journey. My brother and I have our fair share of playful arguments, but we also share common interests like gaming and sports, which brings us closer. We often inspire each other to try new things, and he’s one of the reasons I got into coding in the first place. Outside of coding, I have a deep love for food, especially sushi. I’m fascinated by its unique flavors and textures, and I could happily eat it every day if I had the chance. I also enjoy baking with my mom, experimenting with recipes, and tasting our delicious creations. I dream of traveling to Greece and Hawaii someday. Greece captivates me with its rich history, stunning architecture, and ancient myths that feel like stepping into another world. Meanwhile, Hawaii’s tropical beauty, vibrant culture, and opportunities for outdoor adventures, like surfing and hiking, seem absolutely amazing. School keeps me busy, but I enjoy subjects that challenge my mind, especially math and science, where problem-solving is at the core. I love puzzles and logic games, and I’m always excited when I get to apply critical thinking to unravel tricky concepts. As I look toward the future, I am excited to continue learning, exploring new opportunities, and working on projects that fuel my creativity and interests. I hope to one day become a software developer or game designer, creating experiences that inspire others the way technology inspires me. Until then, I’ll keep exploring, building, and dreaming big!";
+            } else {
+                textElement.innerHTML = "My name is Niam, and I am 12 years old, currently in 6th grade. I love coding because it allows me to create and bring my ideas to life, and I’m always looking for ways to expand my skills. My family—my mom, dad, and older brother—means a lot to me, and they always encourage me to follow my passions. My brother and I have our fair share of playful arguments, but we share common interests and influence each other’s hobbies. Outside of coding, one of my favorite things is sushi—I love its flavors and textures and could eat it all the time. I also dream of traveling to Greece and Hawaii someday; Greece fascinates me with its history and architecture, while Hawaii's tropical beauty and outdoor adventures seem amazing. School keeps me busy, and I enjoy subjects that challenge me, especially those that involve problem-solving. As I look toward the future, I am excited to continue learning, exploring new opportunities, and working on projects that fuel my creativity and interests.";
+            }
+        }
+    </script>
 </html>
